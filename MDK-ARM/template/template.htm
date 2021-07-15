@@ -3,7 +3,7 @@
 <title>Static Call Graph - [template\template.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image template\template.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Jul 15 15:46:38 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Jul 09 10:20:27 2021
 <BR><P>
 <H3>Maximum Stack Usage =       1016 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1968,14 +1968,14 @@ Global Symbols
 
 <P><STRONG><a name="[bd]"></a>touchgfx::Application::handleDragEvent(const touchgfx::DragEvent&)</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, application.o(i._ZN8touchgfx11Application15handleDragEventERKNS_9DragEventE))
 <BR>[Address Reference Count : 4]<UL><LI> touchgfxconfiguration.o(.constdata__ZTV23FrontendApplicationBase)
-<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> frontendapplicationbase.o(.constdata__ZTVN8touchgfx14MVPApplicationE)
+<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> application.o(.constdata__ZTVN8touchgfx11ApplicationE)
 </UL>
 <P><STRONG><a name="[be]"></a>touchgfx::Application::handleGestureEvent(const touchgfx::GestureEvent&)</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, application.o(i._ZN8touchgfx11Application18handleGestureEventERKNS_12GestureEventE))
 <BR>[Address Reference Count : 4]<UL><LI> touchgfxconfiguration.o(.constdata__ZTV23FrontendApplicationBase)
-<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> frontendapplicationbase.o(.constdata__ZTVN8touchgfx14MVPApplicationE)
+<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> application.o(.constdata__ZTVN8touchgfx11ApplicationE)
 </UL>
 <P><STRONG><a name="[c4]"></a>touchgfx::Application::cacheDrawOperations(bool)</STRONG> (Thumb, 1210 bytes, Stack size 136 bytes, application.o(i._ZN8touchgfx11Application19cacheDrawOperationsEb))
@@ -1995,8 +1995,8 @@ Global Symbols
 <LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::Rect::right() const
 </UL>
 <BR>[Address Reference Count : 4]<UL><LI> touchgfxconfiguration.o(.constdata__ZTV23FrontendApplicationBase)
-<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> frontendapplicationbase.o(.constdata__ZTVN8touchgfx14MVPApplicationE)
+<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> application.o(.constdata__ZTVN8touchgfx11ApplicationE)
 </UL>
 <P><STRONG><a name="[26f]"></a>touchgfx::Application::clearAllTimerWidgets()</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, application.o(i._ZN8touchgfx11Application20clearAllTimerWidgetsEv))
@@ -2010,8 +2010,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::Rect::Rect(short, short, short, short)
 </UL>
 <BR>[Address Reference Count : 4]<UL><LI> touchgfxconfiguration.o(.constdata__ZTV23FrontendApplicationBase)
-<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> frontendapplicationbase.o(.constdata__ZTVN8touchgfx14MVPApplicationE)
+<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> application.o(.constdata__ZTVN8touchgfx11ApplicationE)
 </UL>
 <P><STRONG><a name="[26c]"></a>touchgfx::Application::Application()</STRONG> (Thumb, 96 bytes, Stack size 24 bytes, application.o(i._ZN8touchgfx11ApplicationC1Ev))
@@ -2158,8 +2158,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = touchgfx::MVPApplication::handlePendingScreenTransition()
 </UL>
 <BR>[Address Reference Count : 3]<UL><LI> touchgfxconfiguration.o(.constdata__ZTV23FrontendApplicationBase)
-<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> frontendapplicationbase.o(.constdata__ZTVN8touchgfx14MVPApplicationE)
+<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 </UL>
 <P><STRONG><a name="[245]"></a>touchgfx::GraphLabelsBase::setLabelTypedText(const touchgfx::TypedText&)</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, graphlabels.o(i._ZN8touchgfx15GraphLabelsBase17setLabelTypedTextERKNS_9TypedTextE))
 <BR><BR>[Called By]<UL><LI><a href="#[232]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainViewBase::MainViewBase()
@@ -3794,18 +3794,18 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 </UL>
 <P><STRONG><a name="[12b]"></a>touchgfx::Font::getFontHeight() const</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, cachedfont.o(i._ZNK8touchgfx4Font13getFontHeightEv))
-<BR>[Address Reference Count : 3]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<BR>[Address Reference Count : 3]<UL><LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 </UL>
 <P><STRONG><a name="[12e]"></a>touchgfx::Font::getByteAlignRow() const</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, cachedfont.o(i._ZNK8touchgfx4Font15getByteAlignRowEv))
-<BR>[Address Reference Count : 3]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<BR>[Address Reference Count : 3]<UL><LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 </UL>
 <P><STRONG><a name="[126]"></a>touchgfx::Font::getFallbackChar() const</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, cachedfont.o(i._ZNK8touchgfx4Font15getFallbackCharEv))
-<BR>[Address Reference Count : 3]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<BR>[Address Reference Count : 3]<UL><LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 </UL>
 <P><STRONG><a name="[129]"></a>touchgfx::Font::getSpacingAbove(const unsigned short*, ...) const</STRONG> (Thumb, 94 bytes, Stack size 128 bytes, font.o(i._ZNK8touchgfx4Font15getSpacingAboveEPKtz))
@@ -3816,8 +3816,8 @@ Global Symbols
 <LI><a href="#[31a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::TextProvider::getNextLigature(unsigned char, const touchgfx::Font*, const touchgfx::GlyphNode*&)
 <LI><a href="#[278]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::GlyphNode::top() const
 </UL>
-<BR>[Address Reference Count : 3]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<BR>[Address Reference Count : 3]<UL><LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 </UL>
 <P><STRONG><a name="[12f]"></a>touchgfx::Font::getNumberOfLines(const unsigned short*, ...) const</STRONG> (Thumb, 68 bytes, Stack size 120 bytes, font.o(i._ZNK8touchgfx4Font16getNumberOfLinesEPKtz))
@@ -3827,8 +3827,8 @@ Global Symbols
 <LI><a href="#[2aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::TextProvider::initialize(const unsigned short*, std::__va_list, const unsigned short*)
 <LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::TextProvider::getNextChar()
 </UL>
-<BR>[Address Reference Count : 3]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<BR>[Address Reference Count : 3]<UL><LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 </UL>
 <P><STRONG><a name="[31b]"></a>touchgfx::Font::getStringWidthLTR(unsigned char, const unsigned short*, std::__va_list) const</STRONG> (Thumb, 154 bytes, Stack size 144 bytes, font.o(i._ZNK8touchgfx4Font17getStringWidthLTREhPKtSt9__va_list))
@@ -3844,8 +3844,8 @@ Global Symbols
 <P><STRONG><a name="[125]"></a>touchgfx::Font::getGlyph(unsigned short) const</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, cachedfont.o(i._ZNK8touchgfx4Font8getGlyphEt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = touchgfx::Font::getGlyph(unsigned short) const
 </UL>
-<BR>[Address Reference Count : 3]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<BR>[Address Reference Count : 3]<UL><LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 </UL>
 <P><STRONG><a name="[26a]"></a>touchgfx::Rect::right() const</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd24bpp.o(i._ZNK8touchgfx4Rect5rightEv))
@@ -4093,12 +4093,12 @@ Global Symbols
 <P><STRONG><a name="[e7]"></a>__cxa_pure_virtual</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, pure_virt.o(i.__cxa_pure_virtual))
 <BR><BR>[Calls]<UL><LI><a href="#[321]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGPVFN
 </UL>
-<BR>[Address Reference Count : 13]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> mainviewbase.o(.constdata__ZTVN8touchgfx6WidgetE)
+<BR>[Address Reference Count : 13]<UL><LI> mainviewbase.o(.constdata__ZTVN8touchgfx6WidgetE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> abstractpainterrgb888.o(.constdata__ZTVN8touchgfx21AbstractPainterRGB888E)
 <LI> abstractpartition.o(.constdata__ZTVN8touchgfx17AbstractPartitionE)
-<LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 <LI> canvaswidget.o(.constdata__ZTVN8touchgfx12CanvasWidgetE)
+<LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 <LI> drawable.o(.constdata__ZTVN8touchgfx8DrawableE)
 <LI> abstractdatagraph.o(.constdata__ZTVN8touchgfx17AbstractDataGraphE)
 <LI> abstractdatagraph.o(.constdata__ZTVN8touchgfx22AbstractDataGraphWithYE)
@@ -5589,8 +5589,8 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[bf]"></a>touchgfx::Application::handleKeyEvent(unsigned char)</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, application.o(i._ZN8touchgfx11Application14handleKeyEventEh))
 <BR>[Address Reference Count : 4]<UL><LI> touchgfxconfiguration.o(.constdata__ZTV23FrontendApplicationBase)
-<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> frontendapplicationbase.o(.constdata__ZTVN8touchgfx14MVPApplicationE)
+<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> application.o(.constdata__ZTVN8touchgfx11ApplicationE)
 </UL>
 <P><STRONG><a name="[c5]"></a>touchgfx::Application::handleTickEvent()</STRONG> (Thumb, 226 bytes, Stack size 24 bytes, application.o(i._ZN8touchgfx11Application15handleTickEventEv))
@@ -5604,8 +5604,8 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[bc]"></a>touchgfx::Application::handleClickEvent(const touchgfx::ClickEvent&)</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, application.o(i._ZN8touchgfx11Application16handleClickEventERKNS_10ClickEventE))
 <BR>[Address Reference Count : 4]<UL><LI> touchgfxconfiguration.o(.constdata__ZTV23FrontendApplicationBase)
-<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> frontendapplicationbase.o(.constdata__ZTVN8touchgfx14MVPApplicationE)
+<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> application.o(.constdata__ZTVN8touchgfx11ApplicationE)
 </UL>
 <P><STRONG><a name="[c6]"></a>touchgfx::Application::handlePendingScreenTransition()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, application.o(i._ZN8touchgfx11Application29handlePendingScreenTransitionEv))
@@ -5619,8 +5619,8 @@ Global Symbols
 <LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::Rect::Rect(short, short, short, short)
 </UL>
 <BR>[Address Reference Count : 4]<UL><LI> touchgfxconfiguration.o(.constdata__ZTV23FrontendApplicationBase)
-<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> frontendapplicationbase.o(.constdata__ZTVN8touchgfx14MVPApplicationE)
+<LI> frontendapplication.o(.constdata__ZTV19FrontendApplication)
 <LI> application.o(.constdata__ZTVN8touchgfx11ApplicationE)
 </UL>
 <P><STRONG><a name="[346]"></a>touchgfx::FontManager::setFontProvider(touchgfx::FontProvider*)</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, fontmanager.o(i._ZN8touchgfx11FontManager15setFontProviderEPNS_12FontProviderE))
@@ -7409,18 +7409,18 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[31b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::Font::getStringWidthLTR(unsigned char, const unsigned short*, std::__va_list) const
 </UL>
-<BR>[Address Reference Count : 3]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<BR>[Address Reference Count : 3]<UL><LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 </UL>
 <P><STRONG><a name="[12d]"></a>touchgfx::Font::getBitsPerPixel() const</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cachedfont.o(i._ZNK8touchgfx4Font15getBitsPerPixelEv))
-<BR>[Address Reference Count : 3]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<BR>[Address Reference Count : 3]<UL><LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 </UL>
 <P><STRONG><a name="[127]"></a>touchgfx::Font::getEllipsisChar() const</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, cachedfont.o(i._ZNK8touchgfx4Font15getEllipsisCharEv))
-<BR>[Address Reference Count : 3]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<BR>[Address Reference Count : 3]<UL><LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 </UL>
 <P><STRONG><a name="[12a]"></a>touchgfx::Font::getMaxTextHeight(const unsigned short*, ...) const</STRONG> (Thumb, 108 bytes, Stack size 120 bytes, font.o(i._ZNK8touchgfx4Font16getMaxTextHeightEPKtz))
@@ -7431,13 +7431,13 @@ Global Symbols
 <LI><a href="#[31a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::TextProvider::getNextLigature(unsigned char, const touchgfx::Font*, const touchgfx::GlyphNode*&)
 <LI><a href="#[278]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchgfx::GlyphNode::top() const
 </UL>
-<BR>[Address Reference Count : 3]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<BR>[Address Reference Count : 3]<UL><LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 </UL>
 <P><STRONG><a name="[12c]"></a>touchgfx::Font::getMinimumTextHeight() const</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, cachedfont.o(i._ZNK8touchgfx4Font20getMinimumTextHeightEv))
-<BR>[Address Reference Count : 3]<UL><LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
-<LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<BR>[Address Reference Count : 3]<UL><LI> generatedfont.o(.constdata__ZTVN8touchgfx13GeneratedFontE)
+<LI> texts.o(.constdata__ZTVN8touchgfx4FontE)
 <LI> constfont.o(.constdata__ZTVN8touchgfx9ConstFontE)
 </UL>
 <P><STRONG><a name="[268]"></a>touchgfx::Rect::bottom() const</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lcd24bpp.o(i._ZNK8touchgfx4Rect6bottomEv))
