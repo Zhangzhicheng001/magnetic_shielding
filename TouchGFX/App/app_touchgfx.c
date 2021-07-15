@@ -4,7 +4,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -34,7 +34,7 @@ void MX_TouchGFX_Init(void)
  */
 void MX_TouchGFX_Process(void)
 {
-  // Calling farward to touchgfx_init in C++ domain
+  // Calling farward to touchgfx_taskEntry in C++ domain
   touchgfx_taskEntry();
 }
 
@@ -43,7 +43,7 @@ void MX_TouchGFX_Process(void)
  */
 void TouchGFX_Task(void *argument)
 {
-  // Calling farward to touchgfx_init in C++ domain
+  // Calling farward to touchgfx_taskEntry in C++ domain
   touchgfx_taskEntry();
 }
 

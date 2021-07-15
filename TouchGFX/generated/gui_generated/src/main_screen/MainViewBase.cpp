@@ -13,14 +13,14 @@ MainViewBase::MainViewBase() :
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
 
     __background.setPosition(0, 0, 800, 480);
-    __background.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 
     box1.setPosition(0, 0, 800, 480);
-    box1.setColor(touchgfx::Color::getColorFrom24BitRGB(153, 152, 152));
+    box1.setColor(touchgfx::Color::getColorFromRGB(153, 152, 152));
 
     graphBackground.setPosition(15, 24, 703, 424);
-    graphBackground.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    graphBackground.setBorderColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    graphBackground.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    graphBackground.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graphBackground.setBorderSize(1);
 
     graph.setScale(1);
@@ -31,7 +31,7 @@ MainViewBase::MainViewBase() :
     graph.setGraphRangeY(0, 180);
 
     graphMajorYAxisGrid.setScale(1);
-    graphMajorYAxisGrid.setColor(touchgfx::Color::getColorFrom24BitRGB(20, 151, 197));
+    graphMajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
     graphMajorYAxisGrid.setInterval(20);
     graphMajorYAxisGrid.setLineWidth(1);
     graph.addGraphElement(graphMajorYAxisGrid);
@@ -39,17 +39,17 @@ MainViewBase::MainViewBase() :
     graphMajorXAxisLabel.setScale(1);
     graphMajorXAxisLabel.setInterval(20);
     graphMajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T_SINGLEUSEID2));
-    graphMajorXAxisLabel.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    graphMajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph.addBottomElement(graphMajorXAxisLabel);
 
     graphMajorYAxisLabel.setScale(1);
     graphMajorYAxisLabel.setInterval(20);
     graphMajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T_SINGLEUSEID1));
-    graphMajorYAxisLabel.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    graphMajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     graph.addLeftElement(graphMajorYAxisLabel);
 
     graphLine1.setScale(1);
-    graphLine1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(20, 151, 197));
+    graphLine1Painter.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
     graphLine1.setPainter(graphLine1Painter);
     graphLine1.setLineWidth(2);
     graph.addGraphElement(graphLine1);

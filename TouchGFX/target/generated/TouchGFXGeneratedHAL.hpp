@@ -4,7 +4,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -135,6 +135,26 @@ public:
      */
     virtual bool blockCopy(void* RESTRICT dest, const void* RESTRICT src, uint32_t numBytes);
 
+    /**
+     * @fn virtual void TouchGFXGeneratedHAL::beginFrame();
+     *
+     * @brief Called when beginning to rendering a frame.
+     *
+     *        Called when beginning to rendering a frame.
+     *
+     * @return true if rendering can begin, false otherwise.
+     */
+    virtual bool beginFrame();
+
+    /**
+     * @fn virtual void TouchGFXGeneratedHAL::endFrame();
+     *
+     * @brief Called when a rendering pass is completed.
+     *
+     *        Called when a rendering pass is completed.
+     */
+    virtual void endFrame();
+
 protected:
     /**
      * @fn virtual uint16_t* TouchGFXGeneratedHAL::getTFTFrameBuffer() const;
@@ -157,6 +177,10 @@ protected:
      * @param [in,out] adr New frame buffer address.
      */
     virtual void setTFTFrameBuffer(uint16_t* adr);
+
+    virtual void InvalidateCache();
+
+    virtual void FlushCache();
 
 };
 #endif // TouchGFXGeneratedHAL_HPP

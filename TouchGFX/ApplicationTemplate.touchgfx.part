@@ -1,7 +1,7 @@
 
 {
   "Application": {
-    "Name": "template",
+    "Name": "H750XBH6",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "AvailableColorDepths": [ 24 ],
     "AvailableLCDs":
@@ -14,8 +14,9 @@
         "Height": 480
       }
     ],
-    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../template.ioc --platform=m7",
-    "Family" : "STM32H7"
+    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../H750XBH6.ioc --platform=m7",
+    "Family" : "STM32H7",
+    "SubFamily" : "STM32H750 Value line"
   },
-  "Version": "4.15.0"
+  "Version": "4.17.0"
 }

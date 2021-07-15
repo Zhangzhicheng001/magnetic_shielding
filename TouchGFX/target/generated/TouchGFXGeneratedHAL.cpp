@@ -4,7 +4,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -25,7 +25,8 @@
 
 using namespace touchgfx;
 
-namespace {
+namespace
+{
     static uint16_t lcd_int_active_line;
     static uint16_t lcd_int_porch_line;
 }
@@ -33,7 +34,6 @@ namespace {
 void TouchGFXGeneratedHAL::initialize()
 {
     HAL::initialize();
-
     registerEventListener(*(Application::getInstance()));
     setFrameBufferStartAddresses((void*)0xC0000000, (void*)0xC0119400, (void*)0);
 }
@@ -67,6 +67,16 @@ void TouchGFXGeneratedHAL::enableLCDControllerInterrupt()
     LTDC->IER |= LTDC_IER_LIE;
 }
 
+bool TouchGFXGeneratedHAL::beginFrame()
+{
+    return HAL::beginFrame();
+}
+
+void TouchGFXGeneratedHAL::endFrame()
+{
+    HAL::endFrame();
+}
+
 uint16_t* TouchGFXGeneratedHAL::getTFTFrameBuffer() const
 {
     return (uint16_t*)LTDC_Layer1->CFBAR;
@@ -82,17 +92,49 @@ void TouchGFXGeneratedHAL::setTFTFrameBuffer(uint16_t* adr)
 
 void TouchGFXGeneratedHAL::flushFrameBuffer(const touchgfx::Rect& rect)
 {
-  HAL::flushFrameBuffer(rect);
+    HAL::flushFrameBuffer(rect);
+    // If the framebuffer is placed in Write Through cached memory (e.g. SRAM) then
+    // the DCache must be flushed prior to DMA2D accessing it. That's done
+    // using the function SCB_CleanInvalidateDCache(). Remember to enable "CPU Cache" in the
+    // "System Core" settings for "Cortex M7" in CubeMX in order for this function call to work.
+    if (SCB->CCR & SCB_CCR_DC_Msk)
+    {
+        SCB_CleanInvalidateDCache();
+    }
 }
 
 bool TouchGFXGeneratedHAL::blockCopy(void* RESTRICT dest, const void* RESTRICT src, uint32_t numBytes)
 {
-  return HAL::blockCopy(dest, src, numBytes);
+    return HAL::blockCopy(dest, src, numBytes);
+}
+
+void TouchGFXGeneratedHAL::InvalidateCache()
+{
+    // If the framebuffer is placed in Write Through cached memory (e.g. SRAM) then
+    // the DCache must be flushed prior to DMA2D accessing it. That's done
+    // using the function SCB_CleanInvalidateDCache(). Remember to enable "CPU Cache" in the
+    // "System Core" settings for "Cortex M7" in CubeMX in order for this function call to work.
+    if (SCB->CCR & SCB_CCR_DC_Msk)
+    {
+        SCB_CleanInvalidateDCache();
+    }
+}
+
+void TouchGFXGeneratedHAL::FlushCache()
+{
+    // If the framebuffer is placed in Write Through cached memory (e.g. SRAM) then
+    // the DCache must be flushed prior to DMA2D accessing it. That's done
+    // using the function SCB_CleanInvalidateDCache(). Remember to enable "CPU Cache" in the
+    // "System Core" settings for "Cortex M7" in CubeMX in order for this function call to work.
+    if (SCB->CCR & SCB_CCR_DC_Msk)
+    {
+        SCB_CleanInvalidateDCache();
+    }
 }
 
 extern "C"
 {
-    void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef *hltdc)
+    void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef* hltdc)
     {
         if (LTDC->LIPCR == lcd_int_active_line)
         {

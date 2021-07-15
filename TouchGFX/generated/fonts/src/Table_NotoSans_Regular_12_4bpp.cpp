@@ -3,8 +3,7 @@
 #include <fonts/GeneratedFont.hpp>
 
 FONT_TABLE_LOCATION_FLASH_PRAGMA
-KEEP extern const touchgfx::GlyphNode glyphs_NotoSans_Regular_12_4bpp[] FONT_TABLE_LOCATION_FLASH_ATTRIBUTE =
-{
+KEEP extern const touchgfx::GlyphNode glyphs_NotoSans_Regular_12_4bpp[] FONT_TABLE_LOCATION_FLASH_ATTRIBUTE = {
     {     0, 0x0020,   0,   0,   0,   0,   3,   0,   0, 0x00 },
     {     0, 0x002C,   3,   4,   2,   0,   3,   0,   0, 0x00 },
     {     8, 0x002D,   4,   1,   4,   0,   4,   0,   0, 0x00 },
@@ -25,8 +24,7 @@ KEEP extern const touchgfx::GlyphNode glyphs_NotoSans_Regular_12_4bpp[] FONT_TAB
 // NotoSans_Regular_12_4bpp
 extern const touchgfx::GlyphNode glyphs_NotoSans_Regular_12_4bpp[];
 extern const uint8_t unicodes_NotoSans_Regular_12_4bpp_0[];
-extern const uint8_t* const unicodes_NotoSans_Regular_12_4bpp[] =
-{
+extern const uint8_t* const unicodes_NotoSans_Regular_12_4bpp[] = {
     unicodes_NotoSans_Regular_12_4bpp_0
 };
 extern const touchgfx::KerningNode kerning_NotoSans_Regular_12_4bpp[];
@@ -35,6 +33,6 @@ touchgfx::GeneratedFont& getFont_NotoSans_Regular_12_4bpp();
 
 touchgfx::GeneratedFont& getFont_NotoSans_Regular_12_4bpp()
 {
-    static touchgfx::GeneratedFont NotoSans_Regular_12_4bpp(glyphs_NotoSans_Regular_12_4bpp, 15, 12, 2, 4, 1, 0, 0, unicodes_NotoSans_Regular_12_4bpp, kerning_NotoSans_Regular_12_4bpp, 63, 0, 0);
+    static touchgfx::GeneratedFont NotoSans_Regular_12_4bpp(glyphs_NotoSans_Regular_12_4bpp, 15, 12, 2, 4, 1, 0, 0, unicodes_NotoSans_Regular_12_4bpp, kerning_NotoSans_Regular_12_4bpp, 63, 0, 0, 0);
     return NotoSans_Regular_12_4bpp;
 }

@@ -4,7 +4,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -14,11 +14,12 @@
   *
   ******************************************************************************
   */
+
 #include <cassert>
-#include <cmsis_os.h>
-#include <touchgfx/hal/GPIO.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <touchgfx/hal/OSWrappers.hpp>
+
+#include <cmsis_os.h>
 
 static osSemaphoreId frame_buffer_sem;      // Semaphore ID
 osSemaphoreDef(frame_buffer_sem);           // Semaphore definition
@@ -94,6 +95,15 @@ void OSWrappers::signalVSync()
 }
 
 /*
+  * Signal that the rendering of the frame has completed. Used by
+  * some systems to avoid using any previous vsync.
+  */
+void OSWrappers::signalRenderingDone()
+{
+    // Empty implementation for CMSIS V1
+}
+
+/*
  * This function blocks until a VSYNC occurs.
  *
  * Note This function must first clear the mutex/queue and then wait for the next one to
@@ -126,4 +136,20 @@ void OSWrappers::taskDelay(uint16_t ms)
     osDelay(static_cast<uint32_t>(ms));
 }
 
+/**
+ * A function that causes the executing task to yield control to
+ * another thread. This function is used by the framework when it
+ * is necessary to wait a little before continuing (e.g. drawing).
+ *
+ * The implementation should typically request the operating
+ * system to change to another task of similar priority. When
+ * running without an operating system, the implementation can run
+ * a very short task and return.
+ */
+void OSWrappers::taskYield()
+{
+    osThreadYield();
+}
+
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
