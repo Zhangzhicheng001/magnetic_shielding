@@ -13307,72 +13307,72 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-         8          0          0          0          0       1005   app_touchgfx.o
-         0          0         20          0          0      15272   applicationfontprovider.o
-        12          4         60          0          0       5373   bitmapdatabase.o
-       412         48          0          0         16       2648   bsp_sdram.o
-        64          0          0          0          0       7432   cachedfont.o
-       380         12          0          0          0      31636   cmsis_os.o
-         0          0          0          0          0      18960   event_groups.o
-         0          0        383          0          0        802   font_notosans_regular_12_4bpp_0.o
-        32          8         16          0          0       6056   fontcache.o
-        24          6          0          0        596       1340   freertos.o
-        38          4         68          0          0      49704   frontendapplication.o
-       552         44        144          0          0      46471   frontendapplicationbase.o
-       152          6         84          0          0      10264   generatedfont.o
-       466        106          0          0          0       3795   gt911.o
-       464         24          0         24      15360       7515   heap_4.o
-         0          0       7344          0          0       1037   image_blue_slider_vertical_small_indicators_slider3_vertical_round_nob.o
-         0          0      13760          0          0        991   image_blue_slider_vertical_small_slider3_vertical_round_back.o
-         0          0      13760          0          0        991   image_blue_slider_vertical_small_slider3_vertical_round_fill.o
-         0          0          4          0          0       1459   kerning_notosans_regular_12_4bpp.o
-         0          0          8          0          0        736   languagegb.o
-       138          0          0          0          0       3710   list.o
-      1292        114         40          4        576    1363590   main.o
-        30          6         40          0          0     106660   mainpresenter.o
-       310         18         56          0          0      37568   mainview.o
-      1408         88        488          0          0     117920   mainviewbase.o
-         8          0          0          0          0        988   model.o
-       148         38         16          8          0      34588   oswrappers.o
-       790         84          0         12          0      12277   port.o
-      1668         14          0          0          0      18544   queue.o
-        36          8        664          0       1536        864   startup_stm32h750xx.o
-       994         62         80          0          0      98256   stm32dma.o
-       168         36          0         12          0      22825   stm32h7xx_hal.o
-       194         12          0          0          0      39052   stm32h7xx_hal_cortex.o
-       120          6          0          0          0       1215   stm32h7xx_hal_crc.o
-        78          0          0          0          0       1327   stm32h7xx_hal_crc_ex.o
-      1270         22          0          0          0      10027   stm32h7xx_hal_dma2d.o
-       570         50          0          0          0       2668   stm32h7xx_hal_gpio.o
-      1368         38          0          0          0      11066   stm32h7xx_hal_i2c.o
-       172          0          0          0          0       2051   stm32h7xx_hal_i2c_ex.o
-      1066         10          0          0          0       6037   stm32h7xx_hal_ltdc.o
-       804        116          0          8          0       6586   stm32h7xx_hal_msp.o
-        84          6          0          0          0        817   stm32h7xx_hal_pwr_ex.o
-      2436        116          0          0          0       7929   stm32h7xx_hal_rcc.o
-      3494        114          0          0          0       7989   stm32h7xx_hal_rcc_ex.o
-       218          4          0          0          0       4212   stm32h7xx_hal_sdram.o
-       754         40          0          0          0       7640   stm32h7xx_hal_tim.o
-         6          0          0          0          0       2268   stm32h7xx_hal_tim_ex.o
-       140         20          0          0         76       1563   stm32h7xx_hal_timebase_tim.o
-      1698        108         24          0          0      25910   stm32h7xx_hal_uart.o
-       316         18          0          0          0       3821   stm32h7xx_hal_uart_ex.o
-        60         24          0          0          0       4905   stm32h7xx_it.o
-       336         12          0          0          0       4332   stm32h7xx_ll_fmc.o
-        42          0         24          0          0     992820   stm32touchcontroller.o
+         8          0          0          0          0        981   app_touchgfx.o
+         0          0         20          0          0      15184   applicationfontprovider.o
+        12          4         60          0          0       5309   bitmapdatabase.o
+       412         48          0          0         16       2580   bsp_sdram.o
+        64          0          0          0          0       7332   cachedfont.o
+       380         12          0          0          0      31452   cmsis_os.o
+         0          0          0          0          0      18904   event_groups.o
+         0          0        383          0          0        774   font_notosans_regular_12_4bpp_0.o
+        32          8         16          0          0       6004   fontcache.o
+        24          6          0          0        596       1304   freertos.o
+        38          4         68          0          0      49352   frontendapplication.o
+       552         44        144          0          0      45691   frontendapplicationbase.o
+       152          6         84          0          0      10148   generatedfont.o
+       466        106          0          0          0       3715   gt911.o
+       464         24          0         24      15360       7427   heap_4.o
+         0          0       7344          0          0       1013   image_blue_slider_vertical_small_indicators_slider3_vertical_round_nob.o
+         0          0      13760          0          0        967   image_blue_slider_vertical_small_slider3_vertical_round_back.o
+         0          0      13760          0          0        967   image_blue_slider_vertical_small_slider3_vertical_round_fill.o
+         0          0          4          0          0       1435   kerning_notosans_regular_12_4bpp.o
+         0          0          8          0          0        712   languagegb.o
+       138          0          0          0          0       3638   list.o
+      1292        114         40          4        576    1363074   main.o
+        30          6         40          0          0     105772   mainpresenter.o
+       310         18         56          0          0      37164   mainview.o
+      1408         88        488          0          0     116584   mainviewbase.o
+         8          0          0          0          0        964   model.o
+       148         38         16          8          0      34380   oswrappers.o
+       790         84          0         12          0      12125   port.o
+      1668         14          0          0          0      18364   queue.o
+        36          8        664          0       1536        848   startup_stm32h750xx.o
+       994         62         80          0          0      97716   stm32dma.o
+       168         36          0         12          0      22717   stm32h7xx_hal.o
+       194         12          0          0          0      38980   stm32h7xx_hal_cortex.o
+       120          6          0          0          0       1187   stm32h7xx_hal_crc.o
+        78          0          0          0          0       1299   stm32h7xx_hal_crc_ex.o
+      1270         22          0          0          0       9859   stm32h7xx_hal_dma2d.o
+       570         50          0          0          0       2628   stm32h7xx_hal_gpio.o
+      1368         38          0          0          0      10906   stm32h7xx_hal_i2c.o
+       172          0          0          0          0       2015   stm32h7xx_hal_i2c_ex.o
+      1066         10          0          0          0       5937   stm32h7xx_hal_ltdc.o
+       804        116          0          8          0       6438   stm32h7xx_hal_msp.o
+        84          6          0          0          0        805   stm32h7xx_hal_pwr_ex.o
+      2436        116          0          0          0       7821   stm32h7xx_hal_rcc.o
+      3494        114          0          0          0       7893   stm32h7xx_hal_rcc_ex.o
+       218          4          0          0          0       4140   stm32h7xx_hal_sdram.o
+       754         40          0          0          0       7512   stm32h7xx_hal_tim.o
+         6          0          0          0          0       2220   stm32h7xx_hal_tim_ex.o
+       140         20          0          0         76       1527   stm32h7xx_hal_timebase_tim.o
+      1698        108         24          0          0      25798   stm32h7xx_hal_uart.o
+       316         18          0          0          0       3749   stm32h7xx_hal_uart_ex.o
+        60         24          0          0          0       4785   stm32h7xx_it.o
+       336         12          0          0          0       4272   stm32h7xx_ll_fmc.o
+        42          0         24          0          0     992724   stm32touchcontroller.o
          0          0          0          0          0        392   stream_buffer.o
-       228         40         16          8          0       1498   system_stm32h7xx.o
-       116         30        214          4         36       2543   table_notosans_regular_12_4bpp.o
-      2370        172          0         60        240      28471   tasks.o
-       308         32         88         16          0      46364   texts.o
-       752        140        248         16      17252     155380   touchgfxconfiguration.o
-       368         34          0          4          0      85375   touchgfxgeneratedhal.o
-         6          0          0          0          0       1940   touchgfxgpio.o
-       240         28        184          0          0    1057161   touchgfxhal.o
-        28          8         12          4          0       2947   typedtextdatabase.o
+       228         40         16          8          0       1458   system_stm32h7xx.o
+       116         30        214          4         36       2503   table_notosans_regular_12_4bpp.o
+      2370        172          0         60        240      28111   tasks.o
+       308         32         88         16          0      45972   texts.o
+       752        140        248         16      17252     153820   touchgfxconfiguration.o
+       368         34          0          4          0      84991   touchgfxgeneratedhal.o
+         6          0          0          0          0       1892   touchgfxgpio.o
+       240         28        184          0          0    1056565   touchgfxhal.o
+        28          8         12          4          0       2895   typedtextdatabase.o
 
     ----------------------------------------------------------------------
-     29324       1930      37880        180      35692    4557583   Object Totals
+     29324       1930      37880        180      35692    4545691   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         88          0          3          0          4          0   (incl. Padding)
 
@@ -13481,8 +13481,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     66992       3206      42116        504      35768    5693098   Grand Totals
-     66992       3206      42116         24      35768    5693098   ELF Image Totals (compressed)
+     66992       3206      42116        504      35768    5681206   Grand Totals
+     66992       3206      42116         24      35768    5681206   ELF Image Totals (compressed)
      66992       3206      42116         24          0          0   ROM Totals
 
 ==============================================================================
